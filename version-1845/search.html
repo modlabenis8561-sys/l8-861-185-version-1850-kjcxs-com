@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="久久在线影视搜索，快速查找国产短剧、都市短剧、古装短剧、甜宠短剧和热门题材。">
+  <meta name="keywords" content="国产短剧,免费短剧,都市短剧,古装短剧,甜宠短剧,短剧资源,在线观看,每日更新,热门题材,追剧">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索 - 久久在线</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/search-index.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="久久在线">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">久久在线</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+        <a href="categories.html">分类</a>
+        <a href="category/all.html">全部影片</a>
+        <a href="ranking.html">排行榜</a>
+      <div class="nav-dropdown">
+        <button type="button">题材精选</button>
+        <div class="dropdown-menu">
+            <a href="category/guochan-duanju.html">国产短剧</a>
+            <a href="category/dushi-aiqing.html">都市爱情</a>
+            <a href="category/guzhuang-tianchong.html">古装甜宠</a>
+            <a href="category/xuanyi-fanzui.html">悬疑犯罪</a>
+            <a href="category/kehuan-qihuan.html">科幻奇幻</a>
+            <a href="category/xiju-jiating.html">喜剧家庭</a>
+            <a href="category/kongbu-jingsong.html">恐怖惊悚</a>
+            <a href="category/dongzuo-maoxian.html">动作冒险</a>
+            <a href="category/donghua-shaoer.html">动画少儿</a>
+            <a href="category/haiwai-jingxuan.html">海外精选</a>
+        </div>
+      </div>
+    </nav>
+    <form class="search-form" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视作品..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="展开导航">☰</button>
+  </div>
+  <div class="mobile-panel">
+    <nav aria-label="移动导航">
+      <a href="index.html">首页</a>
+        <a href="categories.html">分类</a>
+        <a href="category/all.html">全部影片</a>
+        <a href="ranking.html">排行榜</a>
+      <a href="category/guochan-duanju.html">国产短剧</a>
+            <a href="category/dushi-aiqing.html">都市爱情</a>
+            <a href="category/guzhuang-tianchong.html">古装甜宠</a>
+            <a href="category/xuanyi-fanzui.html">悬疑犯罪</a>
+            <a href="category/kehuan-qihuan.html">科幻奇幻</a>
+            <a href="category/xiju-jiating.html">喜剧家庭</a>
+            <a href="category/kongbu-jingsong.html">恐怖惊悚</a>
+            <a href="category/dongzuo-maoxian.html">动作冒险</a>
+            <a href="category/donghua-shaoer.html">动画少儿</a>
+            <a href="category/haiwai-jingxuan.html">海外精选</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero compact-hero">
+    <div class="container">
+      <span class="eyebrow">搜索</span>
+      <h1>搜索影视作品</h1>
+      <p>输入片名、题材、标签、地区或年份，快速定位可观看内容。</p>
+      <form class="search-form large search-page-form" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索片名或题材" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container section-block">
+    <div class="section-head simple">
+      <div>
+        <span class="eyebrow">搜索结果</span>
+        <h2 id="search-heading">请输入关键词</h2>
+        <p id="search-summary">可按片名、地区、类型、年份与标签筛选。</p>
+      </div>
+    </div>
+    <div class="movie-grid" id="search-results"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">久久在线</a>
+      <p>精选国产免费短剧资源，涵盖都市、古装、甜宠等热门题材，每日更新，满足你的追剧需求！</p>
+    </div>
+    <div>
+      <h3>快速导航</h3>
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="ranking.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+    <div>
+      <h3>热门题材</h3>
+      <a href="category/guochan-duanju.html">国产短剧</a>
+      <a href="category/guzhuang-tianchong.html">古装甜宠</a>
+      <a href="category/dushi-aiqing.html">都市爱情</a>
+      <a href="category/xuanyi-fanzui.html">悬疑犯罪</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 久久在线</span>
+    <span>精选国产免费短剧资源每日更新</span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
